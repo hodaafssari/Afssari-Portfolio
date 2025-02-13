@@ -3,7 +3,7 @@ function toggleMenu() {
     navbar.style.display = navbar.style.display === 'flex' ? 'none' : 'flex';
 }
 
-// Add event listener to handle window resize
+
 window.addEventListener('resize', function() {
     const navbar = document.getElementById('navbar');
     if (window.innerWidth > 995) {
