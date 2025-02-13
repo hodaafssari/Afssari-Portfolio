@@ -1,25 +1,30 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio Website</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/addons/p5.sound.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <a href="#" class="logo">Hoda</a>
+        
+        <!-- Add this menu button -->
+        <div class="menu-btn" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
 
-        <nav>
+        <nav id="navbar">
             <a href="#" class="active">Home</a>
             <a href="works.html">Works</a>
             <a href="skills-education.html">Skills/Education</a>
             <a href="experience.html">Experience</a>
             <a href="contact.html">Contact</a>
-            
         </nav>
     </header>
     <section class="home">
@@ -31,12 +36,20 @@
             <h3 class="typing-text">I'm a <span></span></h3>
             <p>currently a student, ....</p>
             <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/hoda-afssari-1142002/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/hey.itshoda/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
             </div>
             <a href="#" class="btn">Hire me</a>
         </div>
     </section>
+    <script src="js/menu.js"></script>
+    <script src="js/sketch.js" defer></script>
 </body>
 </html>

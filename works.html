@@ -4,18 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Works - Portfolio Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-black text-white">
     <!-- Header Section -->
-    <header class="flex justify-between items-center p-6 bg-white shadow-md">
-        <a href="#" class="logo">Hoda</a>
+    <header>
+        <a href="index.html" class="logo">Hoda</a>
         
-        <nav class="navbar">
+        <div class="menu-btn" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav id="navbar">
             <a href="index.html">Home</a>
             <a href="works.html" class="active">Works</a>
             <a href="skills-education.html">Skills/Education</a>
@@ -23,38 +28,165 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-        </div>
-    </section>
 
     <!-- Portfolio Section -->
-    <main class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6">
-        <div>
-            <img src="https://placehold.co/400x400" alt="Project 1" class="w-full rounded-lg shadow-md">
-        </div>
-        <div>
-            <img src="https://placehold.co/400x400" alt="Project 2" class="w-full rounded-lg shadow-md">
-        </div>
-        <div>
-            <img src="https://placehold.co/400x400" alt="Project 3" class="w-full rounded-lg shadow-md">
-        </div>
-        <div>
-            <img src="https://placehold.co/400x400" alt="Project 4" class="w-full rounded-lg shadow-md">
-        </div>
-        <div>
-            <img src="https://placehold.co/400x400" alt="Project 5" class="w-full rounded-lg shadow-md">
-        </div>
-        <div>
-            <img src="https://placehold.co/400x400" alt="Project 6" class="w-full rounded-lg shadow-md">
+    <main class="works-section">
+        <div class="works-grid">
+            <div class="work-item">
+                <img src="images/snowy-dreamscape.jpg" alt="Snowy Dreamscape">
+                <div class="work-overlay">
+                    <h3>Snowy Dreamscape</h3>
+                    <p class="work-date">Spring 2023</p>
+                    <p class="work-tool">Blender</p>
+                    <p class="work-description">This is the first main piece I did in blender. It was during winter and it just stemmed from me craving the snowy environment.</p>
+                    <a href="works/snowy-dreamscape.html" class="btn project-link" target="_blank">
+                        <i class="fas fa-eye"></i> View Project Details
+                    </a>
+                </div>
+            </div>
+            <div class="work-item">
+                <img src="images/surreal-dream.jpg" alt="A Surreal Dream">
+                <div class="work-overlay">
+                    <h3>A Surreal Dream</h3>
+                    <p class="work-date">2023</p>
+                    <p class="work-tool">A-Frame</p>
+                    <p class="work-description">A collaborative project exploring dream spaces where opposite environments entangle mysteriously. Created in A-frame, this interactive virtual space connects different dreamlike landscapes through bridges, representing the abstract connections in our dreams. Features ambient galaxy sounds and randomly placed objects to enhance the surreal atmosphere.</p>
+                    <button class="btn read-more" onclick="toggleFullDescription(this)">Read More</button>
+                    <div class="full-description hidden">
+                        <p>When we dream, we access a space opposite of reality. Anything can happen, and nothing is impossible. Dreams connect irrelevant things in mysterious, unexplainable ways.</p>
+                        <p>The project uses pastel colors, relaxing sounds, and interconnected landscapes to create a comfortable dream world that visitors can physically interact with through virtual space. Each element works together to create either a happy, comfortable atmosphere or, to others, a potential nightmare.</p>
+                        <p>Purpose: To create connection and interaction with dream spaces, and to provide a relaxing environment where visitors can explore and make their own connections in ways only they can understand.</p>
+                    </div>
+                    <a href="https://sjsu-cadre-classes.github.io/SJSU_Art_101_F22_01/Groups/Dream/" class="btn project-link" target="_blank">
+                        <i class="fas fa-vr-cardboard"></i> Visit VR Space
+                    </a>
+                    <a href="works/surreal-dream.html" class="btn project-link" target="_blank">
+                        <i class="fas fa-eye"></i> View Project Details
+                    </a>
+                </div>
+            </div>
+            <div class="work-item">
+                <img src="images/muslim-representation.jpg" alt="M, M in M - Muslim Misrepresentation in Media">
+                <div class="work-overlay">
+                    <h3>M, M in M</h3>
+                    <p class="work-date">2023</p>
+                    <p class="work-tool">Photoshop</p>
+                    <p class="work-description">A critical examination of Muslim misrepresentation in media, highlighting how mainstream portrayals often perpetuate harmful stereotypes and inaccurate narratives.</p>
+                    <button class="btn read-more" onclick="toggleFullDescription(this)">Read More</button>
+                    <div class="full-description hidden">
+                        <p>There is continuous Muslim misrepresentation in the media sending out the wrong message about Muslims which has disastrous consequences. Muslim characters in the media are commonly either presented as violent, oppressed, or as a terrorist.</p>
+                        <p>America claims to be living in a progressive time but the lack of accurate Muslim representation says otherwise. It is not accurate and often shows a misappropriating and offensive storyline. They are rarely in stories that represent them authentically.</p>
+                        <p>This piece challenges these stereotypes and calls for more authentic representation in both fiction and nonfiction media.</p>
+                    </div>
+                    <a href="works/muslim-representation.html" class="btn project-link" target="_blank">
+                        <i class="fas fa-eye"></i> View Project Details
+                    </a>
+                </div>
+            </div>
+            <div class="work-item">
+                <img src="images/flight-of-fate.jpg" alt="The Flight of Fate">
+                <div class="work-overlay">
+                    <h3>The Flight of Fate</h3>
+                    <p class="work-date">2024</p>
+                    <p class="work-tool">Blender</p>
+                    <p class="work-description">A reimagined 3D model that transforms a wizard hat into a symbol of personal growth and self-determination.</p>
+                    <button class="btn read-more" onclick="toggleFullDescription(this)">Read More</button>
+                    <div class="full-description hidden">
+                        <p>This piece remodels an existing 3D wizard hat, conceptually and physically transforming its meaning. While the original object resembled the sorting hat from Harry Potter - an object that definitively tells you who you are - this reimagining incorporates a butterfly as a symbol of growth and change.</p>
+                        <p>The overall concept evolved from a deterministic view of identity to one that embraces personal growth and self-determination. It represents how no one or nothing can truly define who you are, as you have the power to grow and change.</p>
+                        <p>Based on: <a href="https://sketchfab.com/3d-models/stylized-wizard-hat-f59021d602334367987bcd7657cec722" target="_blank" class="text-[#78d8e1]">Original 3D Model</a></p>
+                    </div>
+                    <a href="works/flight-of-fate.html" class="btn project-link" target="_blank">
+                        <i class="fas fa-eye"></i> View Project Details
+                    </a>
+                </div>
+            </div>
+            <div class="work-item">
+                <img src="images/overwhelming-glitch.jpg" alt="Overwhelming Glitch">
+                <div class="work-overlay">
+                    <h3>Overwhelming Glitch</h3>
+                    <p class="work-date">2023</p>
+                    <p class="work-tool">TextEdit/Audacity</p>
+                    <p class="work-description">An experimental piece using data moshing to transform existing images into glitch art, exploring themes of burnout and being overwhelmed.</p>
+                    <button class="btn read-more" onclick="toggleFullDescription(this)">Read More</button>
+                    <div class="full-description hidden">
+                        <p>Using data moshing techniques, this piece transforms pre-existing images into glitch art that represents the feeling of being overwhelmed and burnt out. The distorted images mirror how one might feel when overwhelmed - not functioning as intended, like a system experiencing glitches.</p>
+                        <p>The work draws a parallel between technical glitches and human experiences of burnout, suggesting that sometimes when we don't function as "intended," we can create something unexpected and beautiful. It's a reflection on how our perceived malfunctions can lead to unique and valuable outcomes.</p>
+                        <p>This piece serves as both a visualization of mental exhaustion and a reminder that even in our "glitched" states, we can produce something meaningful and transformative.</p>
+                    </div>
+                    <a href="works/overwhelming-glitch.html" class="btn project-link" target="_blank">
+                        <i class="fas fa-eye"></i> View Project Details
+                    </a>
+                </div>
+            </div>
+            <div class="work-item">
+                <img src="images/nostalgia-avatar.jpg" alt="Nostalgia - Interactive Avatar">
+                <div class="work-overlay">
+                    <h3>Nostalgia</h3>
+                    <p class="work-date">2023</p>
+                    <p class="work-tool">P5.js</p>
+                    <p class="work-description">An interactive avatar based on childhood doodles, exploring themes of nostalgia, identity, and societal constraints through simple geometric shapes and dynamic interactions.</p>
+                    <button class="btn read-more" onclick="toggleFullDescription(this)">Read More</button>
+                    <div class="full-description hidden">
+                        <p>This interactive piece resurrects a character from my elementary and middle school doodles - a simple figure made of basic geometric shapes that once provided comfort during idle moments. The recreation serves as a bridge to simpler times, embodying a deep sense of nostalgia.</p>
+                        <p>The black square framing the face represents both the hijab and a metaphor for how society attempts to confine Muslim identity within stereotypical boundaries, failing to recognize its dynamic nature. The design incorporates several interactive elements:</p>
+                        <ul class="list-disc pl-5 space-y-2 mt-2">
+                            <p>• A mouth that responds to microphone input</p>
+                            <p>• A circle that moves counter to mouse movements, representing a feeling of losing control</p>
+                            <p>• A smaller circle that randomly selects positions and shades, symbolizing mental "glitches"</p>
+                        </ul>
+                        <p>Through these interactive elements, the piece explores themes of identity, control, and the complexity of navigating between past simplicity and present reality.</p>
+                    </div>
+                    <a href="https://editor.p5js.org/hodaafssari/sketches/XB2dTOoZ1" class="btn project-link" target="_blank">
+                        <i class="fas fa-code"></i> View Interactive Sketch
+                    </a>
+                    <a href="works/nostalgia.html" class="btn project-link" target="_blank">
+                        <i class="fas fa-eye"></i> View Project Details
+                    </a>
+                </div>
+            </div>
+            <div class="work-item">
+                <img src="images/MS1.png" alt="Faded Frequencies">
+                <div class="work-overlay">
+                    <h3>Faded Frequencies</h3>
+                    <p class="work-date">2024</p>
+                    <p class="work-tool">Mixed Media</p>
+                    <p class="work-description">A visual exploration of sound and memory through a series of interconnected pieces, examining how frequencies fade and transform over time.</p>
+                    <button class="btn read-more" onclick="toggleFullDescription(this)">Read More</button>
+                    <div class="full-description hidden">
+                        <p>This series explores the relationship between sound, memory, and visual representation. Each piece in the series captures a different aspect of how frequencies interact with our perception and memories.</p>
+                        <p>The work consists of six interconnected pieces, each representing a different facet of sound visualization and memory interpretation.</p>
+                    </div>
+                    <a href="works/faded-frequencies.html" class="btn project-link" target="_blank">
+                        <i class="fas fa-eye"></i> View Project Details
+                    </a>
+                </div>
+            </div>
         </div>
     </main>
 
     <!-- Footer Section -->
-    <footer class="bg-gray-800 text-white py-4">
-        <div class="text-center">
+    <footer class="footer">
+        <div>
             <p>&copy; 2024 Hoda Afssari. All rights reserved.</p>
-            <p class="mt-2"><a href="#" class="hover:underline">↑ Back to Top</a></p>
+            <p><a href="#" class="back-to-top">↑ Back to Top</a></p>
         </div>
     </footer>
+
+    <section class="contact-info">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/hoda-afssari-1142002/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/hey.itshoda/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="mailto:hodaafssari@gmail.org" class="email-link">hodaafssari@gmail.org</a>
+        </div>
+    </section>
+
+    <script src="js/menu.js"></script>
+    <script src="js/works.js"></script>
 </body>
 
 </html>
