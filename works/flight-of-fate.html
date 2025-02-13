@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faded Frequencies - Hoda Afssari</title>
+    <title>The Flight of Fate - Hoda Afssari</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -45,7 +45,6 @@
         
         .project-images {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
         }
         
@@ -70,6 +69,16 @@
             margin-bottom: 2rem;
         }
         
+        .project-description a {
+            color: #78d8e1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .project-description a:hover {
+            color: white;
+        }
+        
         .back-button {
             display: inline-block;
             margin-top: 2rem;
@@ -90,31 +99,6 @@
             .project-content {
                 grid-template-columns: 1fr;
             }
-            
-            .project-images {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .project-images {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        .video-container {
-            grid-column: 1 / -1;
-            margin-bottom: 2rem;
-            border-radius: 1rem;
-            overflow: hidden;
-            background: #000;
-        }
-        
-        .video-container video {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 1rem;
         }
     </style>
 </head>
@@ -137,45 +121,26 @@
 
     <main class="project-container">
         <div class="project-header">
-            <h1 class="project-title">Faded Frequencies</h1>
+            <h1 class="project-title">The Flight of Fate</h1>
             <div class="project-meta">
                 <span>2024</span>
                 <span>|</span>
-                <span>Arduino & Mixed Media</span>
+                <span>Blender</span>
             </div>
         </div>
 
         <div class="project-content">
             <div class="project-images">
-                <div class="video-container">
-                    <video controls width="100%">
-                        <source src="../images/MSvid.MOV" type="video/quicktime">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <img src="../images/MS1.png" alt="Faded Frequencies - Part 1">
-                <img src="../images/MS2.png" alt="Faded Frequencies - Part 2">
-                <img src="../images/MS3.png" alt="Faded Frequencies - Part 3">
-                <img src="../images/MS4.png" alt="Faded Frequencies - Part 4">
-                <img src="../images/MS5.png" alt="Faded Frequencies - Part 5">
-                <img src="../images/MS6.png" alt="Faded Frequencies - Part 6">
+                <img src="../images/flight-of-fate.jpg" alt="The Flight of Fate">
             </div>
             <div class="project-description">
-                <p>A deeply personal exploration of my journey with hearing loss, visualized through an Arduino-powered installation that translates sound into visual patterns. This piece documents my experience of being deaf in my left ear and the gradual process of losing hearing.</p>
+                <p>A reimagined 3D model that transforms a wizard hat into a symbol of personal growth and self-determination.</p>
                 
-                <p>Using Arduino sensors and LED matrices, the installation captures audio input and transforms it into dynamic visual representations, creating a stark contrast between the left and right audio channels - mirroring my own asymmetric hearing experience. The visualization demonstrates how sound is perceived differently between my functioning and non-functioning ear.</p>
+                <p>This piece remodels an existing 3D wizard hat, conceptually and physically transforming its meaning. While the original object resembled the sorting hat from Harry Potter - an object that definitively tells you who you are - this reimagining incorporates a butterfly as a symbol of growth and change.</p>
                 
-                <p>This work explores multiple aspects of my auditory journey, including:</p>
-                <ul>
-                    <li>The initial realization of hearing loss</li>
-                    <li>The adaptation to unilateral hearing</li>
-                    <li>The transformation of sound perception</li>
-                    <li>The emotional impact of gradual hearing loss</li>
-                    <li>The beauty found in altered perception</li>
-                    <li>The acceptance and embrace of a new way of experiencing sound</li>
-                </ul>
+                <p>The overall concept evolved from a deterministic view of identity to one that embraces personal growth and self-determination. It represents how no one or nothing can truly define who you are, as you have the power to grow and change.</p>
                 
-                <p>Through Arduino's real-time processing, the installation creates an immersive experience that allows viewers to understand how sound is experienced through my perspective, highlighting both the challenges and unique beauty of experiencing the world through altered auditory perception.</p>
+                <p>Based on: <a href="https://sketchfab.com/3d-models/stylized-wizard-hat-f59021d602334367987bcd7657cec722" target="_blank">Original 3D Model</a></p>
                 
                 <a href="../works.html" class="back-button">
                     <i class="fas fa-arrow-left"></i> Back to Works
